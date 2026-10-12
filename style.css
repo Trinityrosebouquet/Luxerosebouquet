@@ -1,0 +1,3392 @@
+/* =========================================================
+  START OF INDEX PAGE
+   1. RESET / GLOBAL
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #fffaf8;
+    color: #171313;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* =========================================================
+   2. COLORS
+========================================================= */
+
+:root {
+    --pink: #c86079;
+    --dark-pink: #ad4d65;
+    --soft-pink: #f7e5e3;
+    --cream: #fffaf8;
+    --dark: #161616;
+    --gray: #777777;
+    --light-border: #ead8d4;
+}
+
+/* =========================================================
+   3. HEADER
+========================================================= */
+
+.header {
+    width: 100%;
+    min-height: 130px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 15px 60px;
+    margin-bottom: -20px;
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(255, 247, 244, 0.15) 0%,
+            rgba(255, 247, 244, 0.25) 55%,
+            #fff7f4 100%
+        ),
+        url("Soft\ Blush\ Foliage\ Shadows.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: relative;
+    z-index: 100;
+}
+
+/* LOGO */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-circle {
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    background-image: url("Luxe\ Rose\ Bouquet\ Floral\ Monogram.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    overflow: hidden;
+}
+
+/* Hide the LR text because the logo image replaces it */
+.logo-circle span {
+    display: none;
+}
+
+
+.logo-text h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.logo-text p {
+    margin-top: 5px;
+
+    font-size: 9px;
+    letter-spacing: 4px;
+}
+
+/* =========================================================
+   4. HERO
+========================================================= */
+
+.hero {
+    width: 100%;
+    min-height: 540px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background-image: url("image6.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 20px;
+}
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+
+    background: linear-gradient(
+        to bottom,
+        #fff7f4 0%,
+        rgba(255, 247, 244, 0.75) 40%,
+        transparent 100%
+    );
+
+    z-index: 2;
+    pointer-events: none;
+}
+/* HERO OVERLAY */
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        90deg,
+        #fff7f4 0%,
+        #fff7f4 32%,
+        rgba(255, 247, 244, 0.95) 40%,
+        rgba(255, 247, 244, 0.65) 48%,
+        rgba(255, 247, 244, 0.20) 58%,
+        transparent 70%
+    );
+
+    z-index: 1;
+}
+
+/* HERO TEXT */
+
+.hero-content {
+    width: 48%;
+
+    position: relative;
+    z-index: 3;
+
+    padding-left: 65px;
+}
+
+.eyebrow {
+    margin-bottom: 15px;
+
+    color: var(--pink);
+
+    font-size: 11px;
+    font-weight: 500;
+
+    letter-spacing: 4px;
+}
+
+.hero-content h1 {
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(52px, 6vw, 82px);
+    font-weight: 500;
+
+    line-height: 0.95;
+
+    color: #171313;
+}
+
+.script-text {
+    margin-top: 5px;
+    margin-bottom: 18px;
+
+    font-family: "Great Vibes", cursive;
+
+    font-size: clamp(44px, 5vw, 68px);
+
+    color: var(--pink);
+}
+
+.hero-description {
+    margin-bottom: 27px;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+.header,
+.hero {
+    border: none;
+    box-shadow: none;
+}
+/* =========================================================
+   5. BUTTON
+========================================================= */
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    padding: 13px 27px;
+
+    background-color: var(--pink);
+
+    border-radius: 30px;
+
+    color: white;
+
+    font-size: 13px;
+    font-weight: 500;
+
+    transition:
+        background-color 0.25s ease,
+        transform 0.25s ease;
+}
+
+.btn:hover {
+    background-color: var(--dark-pink);
+
+    transform: translateY(-2px);
+}
+
+/* =========================================================
+   6. HERO BOUQUET IMAGE
+
+   Your HTML already uses:
+
+   images/hero-bouquet.png
+
+   Ideally use a TRANSPARENT PNG here.
+========================================================= */
+
+.hero-image {
+    width: 55%;
+    height: 100%;
+
+    position: absolute;
+
+    top: 0;
+    right: 0;
+
+    z-index: 2;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+    object-position: center;
+}
+
+/* =========================================================
+   7. CUSTOM BOUQUETS SECTION
+========================================================= */
+
+.bouquets {
+    width: 100%;
+
+    padding: 35px 25px 45px;
+
+    background-color: #fffaf8;
+}
+
+/* TITLE */
+
+.section-title {
+    margin-bottom: 28px;
+
+    text-align: center;
+}
+
+.section-title h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 38px;
+    font-weight: 500;
+}
+
+/* TITLE DECORATION */
+
+.title-decoration {
+    margin-top: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+
+    color: var(--pink);
+}
+
+.title-decoration span {
+    width: 65px;
+    height: 1px;
+
+    background-color: #444;
+}
+
+.title-decoration i {
+    font-size: 18px;
+}
+
+/* =========================================================
+   8. BOUQUET GRID
+========================================================= */
+
+.bouquet-grid {
+    width: 100%;
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 18px;
+}
+
+.bouquet-card {
+    height: 320px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background-color: #eeeeee;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.bouquet-card img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.4s ease;
+}
+
+.bouquet-card:hover img {
+    transform: scale(1.06);
+}
+
+/* =========================================================
+   10. BOTTOM CTA
+========================================================= */
+
+.bottom-cta {
+    width: 100%;
+    min-height: 340px;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    padding: 50px 13%;
+
+    overflow: hidden;
+
+    /*
+    =====================================================
+    🖼️ BACKGROUND IMAGE #2 NEEDED HERE
+
+    This should be the large pink rose photograph from
+    the bottom section of your design.
+
+    Example:
+    background-image: url("images/rose-background.jpg");
+    =====================================================
+    */
+
+    background-image: url("image4.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* CTA DARK OVERLAY */
+
+.cta-overlay {
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(90deg, rgba(20, 10, 10, 0.08), rgba(20, 10, 10, 0.35));
+
+    z-index: 1;
+}
+
+/* CTA TEXT */
+
+.cta-content {
+    position: relative;
+
+    z-index: 2;
+
+    text-align: center;
+
+    color: white;
+}
+
+.cta-script {
+    font-family: "Great Vibes", cursive;
+
+    font-size: clamp(42px, 5vw, 65px);
+
+    line-height: 1.1;
+
+    transform: rotate(-4deg);
+
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+/* =========================================================
+   11. FOOTER
+========================================================= */
+
+.footer {
+    width: 100%;
+
+    padding: 32px 55px 25px;
+
+    background-color: var(--dark);
+
+    color: white;
+}
+
+/* FOOTER TOP */
+
+.footer-top {
+    width: 100%;
+    max-width: 1300px;
+
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* FOOTER LOGO */
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+}
+
+.footer-logo-circle {
+    width: 95px;
+    height: 95px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* NO CIRCLE */
+    border: none;
+    border-radius: 0;
+    overflow: visible;
+}
+
+.footer-logo-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.footer-logo h3 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.footer-logo p {
+    margin-top: 6px;
+
+    font-size: 9px;
+
+    letter-spacing: 3px;
+
+    color: #bbbbbb;
+}
+
+/* =========================================================
+   12. SOCIAL ICONS
+========================================================= */
+
+.socials {
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+}
+
+.socials a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 20px;
+
+    color: white;
+
+    transition:
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.socials a:hover {
+    color: var(--pink);
+
+    transform: translateY(-2px);
+}
+
+/* =========================================================
+   13. FOOTER LINE
+========================================================= */
+
+.footer-line {
+    width: 100%;
+    max-width: 1300px;
+
+    height: 1px;
+
+    margin: 25px auto 18px;
+
+    background-color: #3b3b3b;
+}
+
+/* =========================================================
+   14. FOOTER BOTTOM
+========================================================= */
+
+.footer-bottom {
+    text-align: center;
+
+    color: #aaaaaa;
+
+    font-size: 9px;
+
+    line-height: 1.8;
+}
+
+.footer-bottom a {
+    color: white;
+
+    transition: color 0.2s ease;
+}
+
+.footer-bottom a:hover {
+    color: var(--pink);
+}
+
+/* =========================================================
+   15. TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+    .header {
+        padding: 15px 30px;
+    }
+
+    /* HERO */
+
+    .hero {
+        min-height: 570px;
+    }
+
+    .hero-content {
+        width: 55%;
+
+        padding-left: 35px;
+    }
+
+    .hero-image {
+        width: 55%;
+    }
+
+    /* BOUQUETS */
+
+    .bouquet-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .bouquet-card {
+        height: 300px;
+    }
+}
+
+/* =========================================================
+   16. MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+    /* HEADER */
+
+    .header {
+        min-height: 78px;
+
+        padding: 12px 18px;
+    }
+
+    .logo {
+        gap: 10px;
+    }
+
+    .logo-circle {
+        width: 48px;
+        height: 48px;
+
+        font-size: 14px;
+    }
+
+    .logo-text h2 {
+        font-size: 16px;
+    }
+
+    .logo-text p {
+        font-size: 5px;
+
+        letter-spacing: 2px;
+    }
+
+    /* HERO */
+
+    .hero {
+        min-height: 680px;
+
+        align-items: flex-start;
+
+        background-position: center;
+    }
+
+    .hero-overlay {
+        background: linear-gradient(
+            180deg,
+            rgba(255, 247, 244, 0.98) 0%,
+            rgba(255, 247, 244, 0.9) 40%,
+            rgba(255, 247, 244, 0.25) 100%
+        );
+    }
+
+    .hero-content {
+        width: 100%;
+
+        padding: 45px 25px;
+
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 50px;
+    }
+
+    .script-text {
+        font-size: 45px;
+    }
+
+    .hero-description {
+        font-size: 12px;
+    }
+
+    .hero-image {
+        width: 100%;
+        height: 350px;
+
+        top: auto;
+        bottom: 0;
+
+        opacity: 0.85;
+    }
+
+    /* BOUQUETS */
+
+    .bouquets {
+        padding: 30px 15px;
+    }
+
+    .section-title h2 {
+        font-size: 30px;
+    }
+
+    .bouquet-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 10px;
+    }
+
+    .bouquet-card {
+        height: 230px;
+    }
+
+    .bouquet-card:last-child {
+        grid-column: 1 / -1;
+
+        width: 50%;
+
+        justify-self: center;
+    }
+
+    /* CTA */
+
+    .bottom-cta {
+        min-height: 300px;
+
+        justify-content: center;
+
+        padding: 30px 20px;
+
+        background-position: center;
+    }
+
+    .cta-script {
+        font-size: 44px;
+    }
+
+    /* FOOTER */
+
+    .footer {
+        padding: 30px 20px;
+    }
+
+    .footer-top {
+        flex-direction: column;
+
+        gap: 25px;
+
+        text-align: center;
+    }
+
+    .footer-logo {
+        justify-content: center;
+    }
+}
+
+/* =========================================================
+   17. VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+    .logo-text h2 {
+        font-size: 14px;
+    }
+
+    .hero-content h1 {
+        font-size: 43px;
+    }
+
+    .script-text {
+        font-size: 40px;
+    }
+
+    .bouquet-card {
+        height: 200px;
+    }
+
+    .cta-script {
+        font-size: 38px;
+    }
+}
+/* =========================================================
+    END OF INDEX PAGE
+========================================================= */
+
+
+/* =========================================================
+   CONTACT FORM PAGE
+========================================================= */
+.contact-page-body {
+    margin: 0;
+    padding: 0;
+    background: #f7e8e8;
+    color: #302525;
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* =====================================================
+   CONTACT HERO
+===================================================== */
+
+.contact-page-hero {
+    position: relative;
+    min-height: 345px;
+
+    display: flex;
+    align-items: center;
+
+    background-image: url("image5.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    overflow: hidden;
+}
+
+
+.contact-page-hero-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+
+    background: linear-gradient(
+        90deg,
+        rgba(25, 17, 17, 0.03) 0%,
+        rgba(25, 17, 17, 0.05) 35%,
+        rgba(25, 17, 17, 0.45) 52%,
+        rgba(25, 17, 17, 0.88) 75%,
+        rgba(25, 17, 17, 0.94) 100%
+    );
+}
+
+
+.contact-page-hero-content {
+    position: relative;
+    z-index: 2;
+
+    width: 42%;
+    margin-left: 52%;
+    padding: 40px 0;
+
+    color: #ffffff;
+}
+
+
+.contact-page-eyebrow {
+    margin: 0 0 7px;
+
+    color: #d98ca0;
+
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 5px;
+}
+
+
+#contact-page-title {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-family: "Playfair Display", serif;
+    font-size: clamp(42px, 5vw, 62px);
+    font-weight: 400;
+    line-height: 1.1;
+}
+
+
+.contact-page-flower-divider {
+    margin: 12px 0;
+
+    color: #d37b92;
+
+    font-size: 19px;
+}
+
+
+.contact-page-description {
+    max-width: 420px;
+    margin: 0;
+
+    color: #eee4e4;
+
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.7;
+}
+
+
+.contact-page-script {
+    position: absolute;
+    z-index: 2;
+
+    top: 55px;
+    right: 4%;
+
+    margin: 0;
+
+    color: #d67f96;
+
+    font-family: "Great Vibes", cursive;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 1.15;
+
+    transform: rotate(-5deg);
+}
+
+
+/* =====================================================
+   MAIN CONTACT AREA
+===================================================== */
+
+.contact-page-main {
+    display: grid;
+    grid-template-columns: 38% 62%;
+
+    min-height: 560px;
+
+    background:
+        linear-gradient(
+            rgba(239, 205, 205, 0.84),
+            rgba(239, 205, 205, 0.84)
+        ),
+        url("image5.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* =====================================================
+   LEFT CONTACT INFORMATION
+===================================================== */
+
+.contact-page-info {
+    position: relative;
+
+    padding: 48px 55px;
+
+    background: rgba(42, 32, 32, 0.97);
+    color: #ffffff;
+
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.contact-page-info::after {
+    content: "";
+
+    position: absolute;
+
+    width: 260px;
+    height: 260px;
+
+    right: -100px;
+    bottom: -90px;
+
+    border: 1px solid rgba(194, 111, 132, 0.15);
+    border-radius: 50%;
+
+    pointer-events: none;
+}
+
+
+/* CONTACT INFORMATION ROW */
+
+.contact-page-info-item {
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+
+    margin-bottom: 27px;
+}
+
+
+/* BIGGER ICONS */
+
+.contact-page-info-icon {
+    width: 58px;
+    height: 58px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #bd536e;
+    color: #ffffff;
+
+    border-radius: 50%;
+
+    font-size: 22px;
+}
+
+
+/* MAIN TEXT
+   Phone, Email, Broward County, Hours */
+
+.contact-page-info-title {
+    margin: 0 0 4px;
+
+    color: #ffffff;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+/* SMALL TEXT
+   Text or Call, Email us, etc. */
+
+.contact-page-info-subtitle {
+    margin: 0;
+
+    color: #d8cccc;
+
+    font-size: 11px;
+    font-weight: 400;
+}
+
+
+/* FOLLOW US */
+
+#contact-page-follow-title {
+    margin: 0 0 15px;
+
+    color: #ffffff;
+
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+/* SOCIAL MEDIA ICONS */
+
+.contact-page-social-icons {
+    display: flex;
+    gap: 14px;
+}
+
+.contact-page-social-icons a {
+    width: 46px;
+    height: 46px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(255, 255, 255, 0.12);
+    color: #ffffff;
+
+    border-radius: 50%;
+
+    font-size: 20px;
+
+    text-decoration: none;
+
+    transition:
+        background 0.25s ease,
+        transform 0.25s ease;
+}
+
+
+/* FLOWERS MAKE PEOPLE HAPPIER */
+
+.contact-page-left-script {
+    margin: 25px 0 0;
+
+    color: #c9788e;
+
+    font-family: "Great Vibes", cursive;
+
+    font-size: 30px;
+    line-height: 1.2;
+
+    transform: rotate(-5deg);
+}
+
+.contact-page-home-link {
+    display: inline-block;
+
+    color: #ffffff;
+    text-decoration: none;
+
+    transition:
+        color 0.25s ease,
+        transform 0.25s ease,
+        letter-spacing 0.25s ease;
+}
+
+.contact-page-home-link:hover {
+    color: #d67f96;
+    letter-spacing: 0.5px;
+}
+
+/* =====================================================
+   CONTACT FORM CARD
+
+   THIS CONTROLS THE MAIN WHITE CONTAINER
+===================================================== */
+
+.contact-page-form-card {
+    box-sizing: border-box;
+
+    width: min(540px, 86%);
+
+    align-self: center;
+
+    margin: 18px auto;
+
+    /* Smaller top/bottom padding = shorter card */
+    padding: 18px 28px 16px;
+
+    background: rgba(255, 250, 250, 0.97);
+
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 7px;
+
+    box-shadow: 0 10px 30px rgba(67, 34, 34, 0.16);
+}
+
+
+/* =====================================================
+   FORM HEADER
+===================================================== */
+
+.contact-page-form-eyebrow {
+    margin: 0 0 3px;
+
+    color: #bd536e;
+
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+
+#contact-page-form-title {
+    margin: 0 0 4px;
+
+    color: #342929;
+
+    font-family: "Playfair Display", serif;
+    font-size: 29px;
+    font-weight: 500;
+    line-height: 1.15;
+}
+
+
+.contact-page-form-description {
+    max-width: 500px;
+
+    margin: 0 0 10px;
+
+    color: #000000;
+
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 1.45;
+}
+
+
+/* =====================================================
+   FORM
+===================================================== */
+
+.contact-page-form {
+    width: 100%;
+}
+
+
+.contact-page-form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 10px;
+}
+
+
+.contact-page-form-field {
+    margin-bottom: 7px;
+}
+
+
+.contact-page-form-field label {
+    display: block;
+
+    margin: 0 0 3px 2px;
+
+    color: #000;
+
+    font-size: 10px;
+    font-weight: 800;
+}
+
+
+/* INPUTS */
+
+.contact-page-form-field input,
+.contact-page-form-field select,
+.contact-page-form-field textarea {
+    box-sizing: border-box;
+
+    width: 100%;
+
+    padding: 7px 10px;
+
+    background: #ffffff;
+    color: #3b3232;
+
+    border: 1px solid #d8d1d1;
+    border-radius: 4px;
+
+    outline: none;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 9px;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.contact-page-form-field input::placeholder,
+.contact-page-form-field textarea::placeholder {
+    color: #b1b1b1;
+    opacity: 1;
+    font-weight: 500;
+    font-size: 9px;
+}
+
+.contact-page-form-field input,
+.contact-page-form-field select {
+    height: 34px;
+}
+
+
+.contact-page-form-field textarea {
+    height: 80px;
+    min-height: 80px;
+    max-height: 130px;
+
+    resize: vertical;
+}
+
+
+.contact-page-form-field input:focus,
+.contact-page-form-field select:focus,
+.contact-page-form-field textarea:focus {
+    border-color: #bd536e;
+
+    box-shadow: 0 0 0 3px rgba(189, 83, 110, 0.08);
+}
+
+
+.contact-page-form-field select {
+    cursor: pointer;
+    color: #000;
+}
+
+
+/* =====================================================
+   PAYMENT METHODS
+===================================================== */
+
+.contact-payment-methods {
+    margin: 7px 0 9px;
+    padding: 9px 12px;
+
+    text-align: center;
+
+    background: #f9eeee;
+
+    border: 1px solid #ead2d8;
+    border-radius: 8px;
+}
+
+
+.contact-payment-title {
+    margin: 0 0 7px;
+
+    color: #b74f69;
+
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+
+
+.contact-payment-options {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+
+    flex-wrap: nowrap;
+
+    gap: 8px;
+}
+
+
+/* =====================================================
+   PAYMENT BUTTONS
+===================================================== */
+
+.contact-payment-btn {
+    box-sizing: border-box;
+
+    width: 105px;
+    height: 55px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 3px;
+
+    background: #ffffff;
+    color: #342829;
+
+    border: 1px solid #e2c4cb;
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    box-shadow: 0 3px 8px rgba(71, 37, 45, 0.07);
+
+    transition:
+        transform 0.2s ease,
+        border-color 0.2s ease,
+        background 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.contact-payment-btn > span:not(.zelle-icon) {
+    color: #342829;
+
+    font-size: 8px;
+    font-weight: 500;
+}
+
+
+/* CASH APP */
+
+#cashapp-payment-btn i {
+    width: 27px;
+    height: 27px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #bd536e;
+    color: #ffffff;
+
+    border-radius: 6px;
+
+    font-size: 16px;
+}
+
+#cashapp-payment-btn {
+    background: #00d64f;
+    border-color: #00d64f;
+    color: #ffffff;
+}
+
+#cashapp-payment-btn i {
+    background: #ffffff;
+    color: #00d64f;
+}
+
+#cashapp-payment-btn > span {
+    color: #ffffff;
+}
+
+#cashapp-payment-btn:hover {
+    background: #00bd46;
+    border-color: #00bd46;
+}
+
+/* APPLE PAY */
+
+#applepay-payment-btn i {
+    color: #181313;
+
+    font-size: 27px;
+}
+
+
+/* ZELLE */
+
+.zelle-icon {
+    width: 27px;
+    height: 27px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #bd536e;
+    color: #ffffff;
+
+    border-radius: 6px;
+
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#zelle-payment-btn {
+    background: #6d1ed4;
+    border-color: #6d1ed4;
+    color: #ffffff;
+}
+
+#zelle-payment-btn .zelle-icon {
+    background: #ffffff;
+    color: #6d1ed4;
+}
+
+#zelle-payment-btn > span:not(.zelle-icon) {
+    color: #ffffff;
+}
+
+#zelle-payment-btn:hover {
+    background: #5b18b5;
+    border-color: #5b18b5;
+}
+
+/* PAYMENT HOVER */
+
+.contact-payment-btn:hover {
+    background: #fffafa;
+
+    border-color: #bd536e;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 6px 12px rgba(189, 83, 110, 0.16);
+}
+
+
+.contact-payment-btn i,
+.zelle-icon {
+    transition: transform 0.2s ease;
+}
+
+
+.contact-payment-btn:hover i,
+.contact-payment-btn:hover .zelle-icon {
+    transform: scale(1.06);
+}
+
+.contact-payment-choose {
+    margin: 8px 0 6px;
+    color: #000000;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* Cash App QR Modal */
+.cashapp-qr-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.65);
+    z-index: 9999;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.cashapp-qr-modal.active {
+    display: flex;
+}
+
+.cashapp-qr-modal-content {
+    position: relative;
+    width: 100%;
+    max-width: 420px;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 35px 30px;
+    text-align: center;
+}
+
+.cashapp-qr-modal-content h2 {
+    margin: 0 0 10px;
+    font-size: 28px;
+}
+
+.cashapp-qr-description {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.cashapp-qr-image {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 0 auto 20px;
+}
+
+.cashapp-qr-note {
+    margin: 0;
+    line-height: 1.6;
+}
+
+.cashapp-qr-close {
+    position: absolute;
+    top: 12px;
+    right: 18px;
+    border: none;
+    background: transparent;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+/* Zelle QR Modal */
+.zelle-qr-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.65);
+    z-index: 9999;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.zelle-qr-modal.active {
+    display: flex;
+}
+
+.zelle-qr-modal-content {
+    position: relative;
+    width: 100%;
+    max-width: 420px;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 35px 30px;
+    text-align: center;
+}
+
+.zelle-qr-modal-content h2 {
+    margin: 0 0 10px;
+    font-size: 28px;
+}
+
+.zelle-qr-description {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.zelle-qr-image {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 0 auto 20px;
+}
+
+.zelle-qr-note {
+    margin: 0;
+    line-height: 1.6;
+}
+
+.zelle-qr-close {
+    position: absolute;
+    top: 12px;
+    right: 18px;
+    border: none;
+    background: transparent;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+/* =====================================================
+   50% DEPOSIT
+===================================================== */
+
+.contact-payment-deposit {
+    margin: 7px 0 2px;
+
+    color: #000;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+.contact-payment-note {
+    max-width: 440px;
+
+    margin: 0 auto;
+
+    color: #000;
+
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 1.35;
+}
+
+
+/* =====================================================
+   PAYMENT INSTRUCTIONS
+===================================================== */
+
+.contact-payment-instructions {
+    max-width: 440px;
+
+    margin: 6px auto 0;
+    padding: 6px 9px;
+
+    background: #ffffff;
+
+    border: 1px solid #e8cdd3;
+    border-radius: 6px;
+
+    text-align: left;
+}
+
+.contact-payment-instructions {
+    max-width: 460px;
+
+    margin: 8px auto 0;
+    padding: 10px 14px;
+
+    background: #ffffff;
+
+    border: 1px solid #e8cdd3;
+    border-radius: 7px;
+
+    text-align: center;
+}
+
+
+.contact-payment-instructions-title {
+    margin: 0 0 6px;
+
+    color: #6f263a;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+
+.contact-payment-instructions p {
+    margin: 5px 0;
+
+    color: #000;
+
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 1.5;
+
+    text-align: center;
+}
+
+
+.contact-payment-instructions strong {
+    color: #171011;
+
+    font-weight: 700;
+}
+
+
+.contact-payment-instructions strong {
+    color: #2f2325;
+    font-weight: 600;
+}
+
+
+/* =====================================================
+   SEND MESSAGE BUTTON
+===================================================== */
+
+.contact-page-submit-btn {
+    width: 100%;
+
+    padding: 9px 18px;
+
+    background: #bd536e;
+    color: #ffffff;
+
+    border: none;
+    border-radius: 30px;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 9px;
+    font-weight: 400;
+
+    cursor: pointer;
+
+    transition:
+        background 0.25s ease,
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+.contact-page-submit-btn span {
+    margin-left: 7px;
+}
+
+
+.contact-page-submit-btn:hover {
+    background: #a7445e;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 6px 15px rgba(189, 83, 110, 0.22);
+}
+
+
+.contact-page-submit-btn:active {
+    transform: translateY(0);
+}
+
+.contact-page-response-time {
+    margin: 5px 0 0;
+    text-align: center;
+    color: #000;
+    font-size: 9px;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1000px) {
+
+    .contact-page-hero-content {
+        width: 48%;
+        margin-left: 47%;
+    }
+
+
+    .contact-page-script {
+        display: none;
+    }
+
+
+    .contact-page-main {
+        grid-template-columns: 40% 60%;
+    }
+
+
+    .contact-page-info {
+        padding: 45px 30px;
+    }
+
+
+    /*
+       IMPORTANT:
+       Do not increase the form padding here.
+       This keeps the form compact.
+    */
+
+    .contact-page-form-card {
+        width: 88%;
+        max-width: 540px;
+
+        padding: 18px 24px 16px;
+    }
+}
+
+
+/* =====================================================
+   SMALL TABLET
+===================================================== */
+
+@media (max-width: 800px) {
+
+    .contact-page-hero {
+        min-height: 380px;
+        background-position: 35% center;
+    }
+
+
+    .contact-page-hero-overlay {
+        background: linear-gradient(
+            90deg,
+            rgba(30, 20, 20, 0.15),
+            rgba(30, 20, 20, 0.82)
+        );
+    }
+
+
+    .contact-page-hero-content {
+        width: 50%;
+
+        margin-left: 45%;
+        padding-right: 25px;
+    }
+
+
+    #contact-page-title {
+        font-size: 45px;
+    }
+
+
+    .contact-page-main {
+        display: block;
+    }
+
+
+    .contact-page-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        column-gap: 30px;
+
+        padding: 40px 8%;
+    }
+
+
+    .contact-page-social-section,
+    .contact-page-left-script {
+        grid-column: 1 / -1;
+    }
+
+
+    .contact-page-form-card {
+        box-sizing: border-box;
+
+        width: calc(100% - 50px);
+        max-width: 540px;
+
+        margin: 25px auto;
+        padding: 18px 24px 16px;
+    }
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .contact-page-hero {
+        min-height: 430px;
+
+        align-items: flex-end;
+
+        background-position: 30% center;
+    }
+
+
+    .contact-page-hero-overlay {
+        background: linear-gradient(
+            180deg,
+            rgba(27, 18, 18, 0.1) 0%,
+            rgba(27, 18, 18, 0.35) 45%,
+            rgba(27, 18, 18, 0.9) 100%
+        );
+    }
+
+
+    .contact-page-hero-content {
+        box-sizing: border-box;
+
+        width: 100%;
+
+        margin: 0;
+        padding: 35px 22px;
+
+        text-align: center;
+    }
+
+
+    .contact-page-eyebrow {
+        font-size: 8px;
+        letter-spacing: 4px;
+    }
+
+
+    #contact-page-title {
+        font-size: 43px;
+    }
+
+
+    .contact-page-description {
+        max-width: 320px;
+
+        margin: 0 auto;
+
+        font-size: 10px;
+    }
+
+
+    .contact-page-script {
+        display: none;
+    }
+
+
+    /* LEFT INFO */
+
+    .contact-page-info {
+        display: block;
+
+        padding: 38px 25px;
+    }
+
+
+    .contact-page-info-item {
+        margin-bottom: 18px;
+    }
+
+
+    .contact-page-info-icon {
+        width: 42px;
+        height: 42px;
+
+        font-size: 15px;
+    }
+
+
+    /* FORM */
+
+    .contact-page-form-card {
+        box-sizing: border-box;
+
+        width: calc(100% - 30px);
+        max-width: 540px;
+
+        margin: 22px auto;
+        padding: 17px 18px 15px;
+    }
+
+
+    #contact-page-form-title {
+        font-size: 27px;
+    }
+
+
+    .contact-page-form-description {
+        margin-bottom: 9px;
+
+        font-size: 9px;
+    }
+
+
+    .contact-page-form-row {
+        grid-template-columns: 1fr;
+
+        gap: 0;
+    }
+
+
+    /*
+       KEEP THESE SHORT.
+       Your old CSS increased them on mobile.
+    */
+
+    .contact-page-form-field input,
+    .contact-page-form-field select {
+        height: 34px;
+    }
+
+
+    .contact-page-form-field textarea {
+        height: 58px;
+        min-height: 58px;
+    }
+
+
+    /* PAYMENT */
+
+    .contact-payment-methods {
+        margin: 7px 0;
+        padding: 9px 7px;
+    }
+
+
+    .contact-payment-options {
+        gap: 5px;
+    }
+
+
+    .contact-payment-btn {
+        flex: 1;
+
+        width: auto;
+        min-width: 0;
+        height: 52px;
+    }
+
+
+    #cashapp-payment-btn i,
+    .zelle-icon {
+        width: 25px;
+        height: 25px;
+
+        font-size: 15px;
+    }
+
+
+    #applepay-payment-btn i {
+        font-size: 25px;
+    }
+
+
+    .contact-payment-btn > span:not(.zelle-icon) {
+        font-size: 7px;
+    }
+
+
+    .contact-payment-title {
+        margin-bottom: 6px;
+
+        font-size: 8px;
+        letter-spacing: 1px;
+    }
+
+
+    .contact-payment-deposit {
+        margin-top: 6px;
+
+        font-size: 9px;
+    }
+
+
+    .contact-payment-note {
+        font-size: 7px;
+    }
+
+
+    .contact-payment-instructions {
+        margin-top: 5px;
+        padding: 5px 7px;
+    }
+
+
+    .contact-payment-instructions p {
+        font-size: 7px;
+        line-height: 1.25;
+    }
+
+
+    /* BUTTON */
+
+    .contact-page-submit-btn {
+        padding: 9px 18px;
+    }
+}
+
+
+/* =====================================================
+   VERY SMALL PHONES
+===================================================== */
+
+@media (max-width: 380px) {
+
+    .contact-page-form-card {
+        width: calc(100% - 20px);
+
+        margin: 18px auto;
+        padding: 15px 13px 13px;
+    }
+
+
+    #contact-page-form-title {
+        font-size: 25px;
+    }
+
+
+    .contact-page-info {
+        padding: 35px 20px;
+    }
+
+
+    .contact-page-info-title {
+        font-size: 10px;
+    }
+
+
+    .contact-payment-options {
+        gap: 4px;
+    }
+
+
+    .contact-payment-btn {
+        height: 50px;
+    }
+}
+/* =========================================================
+   END OF CONTACT FORM PAGE
+========================================================= */
+
+
+/* =========================================================
+   LUXE ROSE BOUQUET
+   THANK YOU PAGE
+========================================================= */
+
+
+/* =====================================================
+   PAGE
+===================================================== */
+
+.thank-you-page-body {
+    margin: 0;
+    padding: 0;
+
+    background: #f8eeee;
+    color: #2d2424;
+
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* Keep sizing predictable */
+.thank-you-page-body *,
+.thank-you-page-body *::before,
+.thank-you-page-body *::after {
+    box-sizing: border-box;
+}
+
+
+/* =====================================================
+   HEADER ORDER BUTTON
+===================================================== */
+
+.thank-you-header-order-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    padding: 12px 25px;
+
+    border-radius: 30px;
+
+    background: #bd536e;
+    color: #ffffff;
+
+    font-size: 11px;
+    font-weight: 400;
+
+    text-decoration: none;
+
+    transition:
+        background 0.25s ease,
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+.thank-you-header-order-btn:hover {
+    background: #a8445e;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 5px 14px rgba(189, 83, 110, 0.25);
+}
+
+
+/* =====================================================
+   MAIN SECTION
+===================================================== */
+
+.thank-you-page-main {
+    position: relative;
+
+    min-height: 620px;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    padding: 45px 7%;
+
+    background-image: url("image5.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    overflow: hidden;
+}
+
+
+/* =====================================================
+   OVERLAY
+===================================================== */
+
+.thank-you-page-overlay {
+    position: absolute;
+    inset: 0;
+
+    z-index: 1;
+
+    background: linear-gradient(
+        90deg,
+        rgba(255, 245, 243, 0.02) 0%,
+        rgba(255, 245, 243, 0.04) 35%,
+        rgba(255, 249, 247, 0.20) 50%,
+        rgba(255, 249, 247, 0.35) 100%
+    );
+
+    pointer-events: none;
+}
+
+
+/* =====================================================
+   THANK YOU CARD
+===================================================== */
+
+.thank-you-page-content {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+    max-width: 390px;
+
+    margin: 0;
+
+    padding: 25px 28px;
+
+    text-align: center;
+
+    background: rgba(255, 248, 246, 0.72);
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255, 255, 255, 0.75);
+    border-radius: 14px;
+
+    box-shadow: 0 10px 30px rgba(69, 35, 40, 0.14);
+}
+
+
+/* =====================================================
+   HEART
+===================================================== */
+
+.thank-you-heart {
+    height: 58px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 2px;
+
+    color: #b74e69;
+
+    font-family: "Great Vibes", cursive;
+    font-size: 67px;
+    line-height: 1;
+
+    transform: rotate(-13deg);
+}
+
+
+/* =====================================================
+   TITLE
+===================================================== */
+
+.thank-you-title {
+    margin: 3px 0 8px;
+
+    color: #211b1b;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(46px, 5vw, 64px);
+    font-weight: 500;
+    line-height: 1.05;
+}
+
+
+/* =====================================================
+   MESSAGE SENT
+===================================================== */
+
+.thank-you-subtitle {
+    margin: 0;
+
+    color: #b95770;
+
+    font-size: 9px;
+    font-weight: 600;
+
+    letter-spacing: 4px;
+}
+
+
+/* =====================================================
+   DIVIDER
+===================================================== */
+
+.thank-you-divider {
+    width: 80%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 13px;
+
+    margin: 18px auto;
+}
+
+
+.thank-you-divider-line {
+    display: block;
+
+    flex: 1;
+
+    height: 1px;
+
+    background: #ce9da7;
+}
+
+
+.thank-you-divider-flower {
+    color: #bd536e;
+
+    font-size: 22px;
+    line-height: 1;
+}
+
+
+/* =====================================================
+   MAIN MESSAGE
+===================================================== */
+
+.thank-you-message {
+    max-width: 340px;
+
+    margin: 0 auto;
+
+    color: #1a1111;
+
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.65;
+}
+
+/* =====================================================
+   FOLLOW MESSAGE
+===================================================== */
+
+.thank-you-follow-message {
+    max-width: 340px;
+
+    margin: 17px auto 0;
+
+    color: #000;
+
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.65;
+}
+
+/* =====================================================
+   HOME BUTTON
+===================================================== */
+
+.thank-you-home-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+
+    min-width: 165px;
+
+    margin-top: 20px;
+    padding: 11px 23px;
+
+    border-radius: 30px;
+
+    background: #bd536e;
+    color: #ffffff;
+
+    font-size: 10px;
+    font-weight: 500;
+
+    text-decoration: none;
+
+    transition:
+        background 0.25s ease,
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+.thank-you-home-btn:hover {
+    background: #a7445e;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 6px 16px rgba(130, 53, 73, 0.20);
+}
+
+
+.thank-you-home-arrow {
+    font-size: 14px;
+}
+
+
+/* =====================================================
+   HANDWRITTEN MESSAGE
+===================================================== */
+
+.thank-you-script {
+    margin: 25px 0 0;
+
+    color: #c5667f;
+
+    font-family: "Great Vibes", cursive;
+
+    font-size: clamp(25px, 3vw, 34px);
+    font-weight: 400;
+    line-height: 1.1;
+
+    transform: rotate(-5deg);
+}
+
+
+/* =====================================================
+   LARGE DESKTOP
+===================================================== */
+
+@media (min-width: 1400px) {
+
+    .thank-you-page-main {
+        min-height: 680px;
+
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+
+
+    .thank-you-page-content {
+        max-width: 410px;
+
+        padding: 28px 30px;
+    }
+
+
+    .thank-you-message {
+        font-size: 14px;
+    }
+
+
+    .thank-you-follow-message {
+        font-size: 11px;
+    }
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1000px) {
+
+    .thank-you-page-main {
+        min-height: 600px;
+
+        padding: 40px 5%;
+
+        background-position: 40% center;
+    }
+
+
+    .thank-you-page-content {
+        max-width: 380px;
+
+        padding: 23px 24px;
+    }
+
+
+    .thank-you-title {
+        font-size: 50px;
+    }
+
+
+    .thank-you-subtitle {
+        letter-spacing: 3.5px;
+    }
+}
+
+
+/* =====================================================
+   SMALL TABLET
+===================================================== */
+
+@media (max-width: 750px) {
+
+    .thank-you-page-main {
+        min-height: 620px;
+
+        padding: 35px 4%;
+
+        background-position: 35% center;
+    }
+
+
+    .thank-you-page-overlay {
+        background: linear-gradient(
+            90deg,
+            rgba(255, 245, 243, 0.05) 0%,
+            rgba(255, 245, 243, 0.18) 35%,
+            rgba(255, 245, 243, 0.65) 100%
+        );
+    }
+
+
+    .thank-you-page-content {
+        max-width: 350px;
+
+        padding: 22px 20px;
+    }
+
+
+    .thank-you-heart {
+        height: 50px;
+
+        font-size: 58px;
+    }
+
+
+    .thank-you-title {
+        font-size: 43px;
+    }
+
+
+    .thank-you-subtitle {
+        font-size: 8px;
+
+        letter-spacing: 2.5px;
+    }
+
+
+    .thank-you-message {
+        font-size: 11px;
+    }
+
+
+    .thank-you-follow-message {
+        font-size: 9px;
+    }
+
+
+    .thank-you-script {
+        font-size: 27px;
+    }
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .thank-you-header-order-btn {
+        padding: 9px 16px;
+
+        font-size: 9px;
+    }
+
+
+    .thank-you-page-main {
+        min-height: 650px;
+
+        justify-content: center;
+        align-items: flex-end;
+
+        padding: 30px 15px;
+
+        background-position: 28% center;
+    }
+
+
+    /*
+       Darker/stronger fade near bottom so text
+       remains readable without hiding the image.
+    */
+
+    .thank-you-page-overlay {
+        background: linear-gradient(
+            180deg,
+            rgba(255, 247, 245, 0.02) 0%,
+            rgba(255, 247, 245, 0.08) 28%,
+            rgba(255, 247, 245, 0.50) 52%,
+            rgba(255, 247, 245, 0.88) 100%
+        );
+    }
+
+
+    /*
+       Keep the card instead of removing it.
+    */
+
+    .thank-you-page-content {
+        width: 100%;
+        max-width: 390px;
+
+        margin: 0;
+
+        padding: 20px 18px;
+
+        background: rgba(255, 248, 246, 0.76);
+
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+
+        border-radius: 12px;
+    }
+
+
+    .thank-you-heart {
+        height: 43px;
+
+        font-size: 51px;
+    }
+
+
+    .thank-you-title {
+        margin-top: 2px;
+
+        font-size: 40px;
+    }
+
+
+    .thank-you-subtitle {
+        font-size: 7px;
+
+        letter-spacing: 2px;
+    }
+
+
+    .thank-you-divider {
+        width: 75%;
+
+        gap: 10px;
+
+        margin: 14px auto;
+    }
+
+
+    .thank-you-divider-flower {
+        font-size: 19px;
+    }
+
+
+    .thank-you-message {
+        max-width: 310px;
+
+        font-size: 10px;
+        line-height: 1.55;
+    }
+
+
+    .thank-you-follow-message {
+        max-width: 300px;
+
+        margin-top: 13px;
+
+        font-size: 9px;
+        line-height: 1.55;
+    }
+
+
+    .thank-you-desktop-break {
+        display: none;
+    }
+
+
+    .thank-you-home-btn {
+        min-width: 150px;
+
+        margin-top: 17px;
+        padding: 10px 20px;
+    }
+
+
+    .thank-you-script {
+        margin-top: 20px;
+
+        font-size: 25px;
+    }
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 420px) {
+
+    .thank-you-page-main {
+        min-height: 620px;
+
+        padding: 25px 10px;
+
+        background-position: 27% center;
+    }
+
+
+    .thank-you-page-content {
+        width: 100%;
+
+        padding: 18px 14px;
+    }
+
+
+    .thank-you-title {
+        font-size: 37px;
+    }
+
+
+    .thank-you-subtitle {
+        font-size: 7px;
+
+        letter-spacing: 1.7px;
+    }
+
+
+    .thank-you-divider {
+        width: 82%;
+    }
+
+
+    .thank-you-message {
+        font-size: 10px;
+    }
+
+
+    .thank-you-follow-message {
+        font-size: 8.5px;
+    }
+
+
+    .thank-you-script {
+        font-size: 23px;
+    }
+}
+
+
+/* =====================================================
+   VERY SMALL MOBILE
+===================================================== */
+
+@media (max-width: 350px) {
+
+    .thank-you-page-main {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+
+    .thank-you-page-content {
+        padding: 16px 11px;
+    }
+
+
+    .thank-you-title {
+        font-size: 34px;
+    }
+
+
+    .thank-you-subtitle {
+        letter-spacing: 1.3px;
+    }
+
+
+    .thank-you-divider {
+        width: 88%;
+    }
+
+
+    .thank-you-home-btn {
+        min-width: 140px;
+
+        padding: 9px 17px;
+    }
+
+
+    .thank-you-script {
+        font-size: 21px;
+    }
+}
+/* =========================================================
+   END OF THANK YOU PAGE
+========================================================= */
+
+
+
+/* =========================================================
+   START OF PRIVACY POLICY PAGE
+========================================================= */
+
+.privacy-page {
+    width: 100%;
+    background: #fffaf8;
+    color: #302525;
+}
+
+
+/* =========================================================
+   PRIVACY HERO
+========================================================= */
+
+.privacy-hero {
+    padding: 65px 25px 55px;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(255, 247, 244, 0.88),
+            rgba(247, 229, 227, 0.92)
+        ),
+        url("Soft Blush Foliage Shadows.png");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.privacy-eyebrow {
+    margin: 0 0 8px;
+
+    color: #bd536e;
+
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 4px;
+}
+
+.privacy-hero h1 {
+    margin: 0;
+
+    color: #2f2325;
+
+    font-family: "Playfair Display", serif;
+    font-size: clamp(42px, 5vw, 60px);
+    font-weight: 500;
+}
+
+.privacy-updated {
+    margin: 12px 0 0;
+
+    color: #766668;
+
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   PRIVACY CONTENT
+========================================================= */
+
+.privacy-content {
+    padding: 55px 25px 70px;
+}
+
+.privacy-container {
+    width: 100%;
+    max-width: 900px;
+
+    margin: 0 auto;
+    padding: 45px 55px;
+
+    background: #ffffff;
+
+    border: 1px solid #ead8d4;
+    border-radius: 12px;
+
+    box-shadow: 0 8px 25px rgba(71, 37, 45, 0.07);
+}
+
+.privacy-intro {
+    margin: 0 0 35px;
+
+    color: #4a3d3f;
+
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+
+/* =========================================================
+   PRIVACY SECTIONS
+========================================================= */
+
+.privacy-section {
+    margin-bottom: 35px;
+}
+
+.privacy-section:last-child {
+    margin-bottom: 0;
+}
+
+.privacy-section h2 {
+    margin: 0 0 12px;
+
+    color: #a7445e;
+
+    font-family: "Playfair Display", serif;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.privacy-section p {
+    margin: 0 0 12px;
+
+    color: #4a3d3f;
+
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.privacy-section ul {
+    margin: 10px 0 15px;
+    padding-left: 22px;
+}
+
+.privacy-section li {
+    margin-bottom: 8px;
+
+    color: #4a3d3f;
+
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.privacy-section strong {
+    color: #2f2325;
+}
+
+
+/* =========================================================
+   CONTACT BUTTON
+========================================================= */
+
+.privacy-contact-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 8px;
+    padding: 11px 25px;
+
+    background: #bd536e;
+    color: #ffffff;
+
+    border-radius: 30px;
+
+    font-size: 11px;
+    font-weight: 500;
+
+    text-decoration: none;
+
+    transition:
+        background 0.25s ease,
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.privacy-contact-btn:hover {
+    background: #a7445e;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 5px 14px rgba(189, 83, 110, 0.25);
+}
+
+
+/* =========================================================
+   FOOTER LEGAL LINKS
+========================================================= */
+
+.footer-legal-links {
+    margin: 3px 0;
+}
+
+.footer-legal-links span {
+    margin: 0 6px;
+
+    color: #666666;
+}
+
+
+/* =========================================================
+   PRIVACY TABLET
+========================================================= */
+
+@media (max-width: 800px) {
+
+    .privacy-hero {
+        padding: 55px 20px 45px;
+    }
+
+    .privacy-content {
+        padding: 40px 20px 55px;
+    }
+
+    .privacy-container {
+        padding: 35px 35px;
+    }
+
+}
+
+
+/* =========================================================
+   PRIVACY MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .privacy-hero {
+        padding: 45px 18px 40px;
+    }
+
+    .privacy-eyebrow {
+        font-size: 8px;
+        letter-spacing: 3px;
+    }
+
+    .privacy-hero h1 {
+        font-size: 39px;
+    }
+
+    .privacy-updated {
+        font-size: 9px;
+    }
+
+    .privacy-content {
+        padding: 25px 15px 40px;
+    }
+
+    .privacy-container {
+        padding: 28px 20px;
+
+        border-radius: 8px;
+    }
+
+    .privacy-intro {
+        margin-bottom: 28px;
+
+        font-size: 12px;
+        line-height: 1.75;
+    }
+
+    .privacy-section {
+        margin-bottom: 28px;
+    }
+
+    .privacy-section h2 {
+        font-size: 20px;
+    }
+
+    .privacy-section p,
+    .privacy-section li {
+        font-size: 11px;
+        line-height: 1.7;
+    }
+
+    .privacy-section ul {
+        padding-left: 18px;
+    }
+
+    .privacy-contact-btn {
+        padding: 10px 22px;
+
+        font-size: 10px;
+    }
+
+}
+/* =========================================================
+   END OF PRIVACY POLICY PAGE
+========================================================= */
+
+
+
+/* =========================================================
+   START OF TERMS OF SERVICE PAGE
+========================================================= */
+
+.terms-page {
+    width: 100%;
+    background: #fffaf8;
+    color: #302525;
+}
+
+
+/* TERMS HERO */
+
+.terms-hero {
+    padding: 65px 25px 55px;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(255, 247, 244, 0.88),
+            rgba(247, 229, 227, 0.92)
+        ),
+        url("Soft Blush Foliage Shadows.png");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.terms-eyebrow {
+    margin: 0 0 8px;
+
+    color: #bd536e;
+
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 4px;
+}
+
+.terms-hero h1 {
+    margin: 0;
+
+    color: #2f2325;
+
+    font-family: "Playfair Display", serif;
+    font-size: clamp(42px, 5vw, 60px);
+    font-weight: 500;
+}
+
+.terms-updated {
+    margin: 12px 0 0;
+
+    color: #766668;
+
+    font-size: 11px;
+}
+
+
+/* TERMS CONTENT */
+
+.terms-content {
+    padding: 55px 25px 70px;
+}
+
+.terms-container {
+    width: 100%;
+    max-width: 900px;
+
+    margin: 0 auto;
+    padding: 45px 55px;
+
+    background: #ffffff;
+
+    border: 1px solid #ead8d4;
+    border-radius: 12px;
+
+    box-shadow: 0 8px 25px rgba(71, 37, 45, 0.07);
+}
+
+.terms-intro {
+    margin: 0 0 35px;
+
+    color: #4a3d3f;
+
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+
+/* TERMS SECTIONS */
+
+.terms-section {
+    margin-bottom: 35px;
+}
+
+.terms-section:last-child {
+    margin-bottom: 0;
+}
+
+.terms-section h2 {
+    margin: 0 0 12px;
+
+    color: #a7445e;
+
+    font-family: "Playfair Display", serif;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.terms-section p {
+    margin: 0 0 12px;
+
+    color: #4a3d3f;
+
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.terms-section strong {
+    color: #2f2325;
+    font-weight: 600;
+}
+
+
+/* PRIVACY POLICY LINK */
+
+.terms-inline-link {
+    color: #bd536e;
+    font-weight: 600;
+    text-decoration: none;
+
+    transition: color 0.2s ease;
+}
+
+.terms-inline-link:hover {
+    color: #a7445e;
+    text-decoration: underline;
+}
+
+
+/* CONTACT BUTTON */
+
+.terms-contact-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 8px;
+    padding: 11px 25px;
+
+    background: #bd536e;
+    color: #ffffff;
+
+    border-radius: 30px;
+
+    font-size: 11px;
+    font-weight: 500;
+
+    text-decoration: none;
+
+    transition:
+        background 0.25s ease,
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.terms-contact-btn:hover {
+    background: #a7445e;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 5px 14px rgba(189, 83, 110, 0.25);
+}
+
+
+/* TABLET */
+
+@media (max-width: 800px) {
+
+    .terms-hero {
+        padding: 55px 20px 45px;
+    }
+
+    .terms-content {
+        padding: 40px 20px 55px;
+    }
+
+    .terms-container {
+        padding: 35px;
+    }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .terms-hero {
+        padding: 45px 18px 40px;
+    }
+
+    .terms-eyebrow {
+        font-size: 8px;
+        letter-spacing: 3px;
+    }
+
+    .terms-hero h1 {
+        font-size: 39px;
+    }
+
+    .terms-updated {
+        font-size: 9px;
+    }
+
+    .terms-content {
+        padding: 25px 15px 40px;
+    }
+
+    .terms-container {
+        padding: 28px 20px;
+
+        border-radius: 8px;
+    }
+
+    .terms-intro {
+        margin-bottom: 28px;
+
+        font-size: 12px;
+        line-height: 1.75;
+    }
+
+    .terms-section {
+        margin-bottom: 28px;
+    }
+
+    .terms-section h2 {
+        font-size: 20px;
+    }
+
+    .terms-section p {
+        font-size: 11px;
+        line-height: 1.7;
+    }
+
+    .terms-contact-btn {
+        padding: 10px 22px;
+
+        font-size: 10px;
+    }
+
+}
+/* =========================================================
+   END OF TERMS OF SERVICE PAGE
+========================================================= */
