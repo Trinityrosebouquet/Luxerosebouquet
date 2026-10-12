@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
         <link rel="stylesheet" href="style.css" />
         <link rel="stylesheet" href="contact-form.css" />
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
         <script src="index.js" defer></script>
     </head>
     <body id="contact-page-body" class="contact-page-body">
@@ -155,14 +156,13 @@
                         </select>
                     </div>
                     <div class="contact-page-form-field">
-                        <label for="contact-address">Address *</label>
+                        <label for="contact-address">Address (Optional)</label>
                         <input
                             type="text"
                             id="contact-address"
                             name="address"
-                            placeholder="Street Address, City, State, ZIP"
-                            autocomplete="street-address"
-                            required/>
+                            placeholder="Street Address, City, State, ZIP (Optional)"
+                            autocomplete="street-address"/>
                     </div>
                     <div class="contact-page-form-field">
                         <label for="contact-message">Your Message *</label>
