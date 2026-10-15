@@ -1175,11 +1175,8 @@ a {
 }
 
 /* =====================================================
-
    CONTACT FORM CARD
-
    THIS CONTROLS THE MAIN WHITE CONTAINER
-
 ===================================================== */
 
 .contact-page-form-card {
@@ -1205,9 +1202,7 @@ a {
 }
 
 /* =====================================================
-
    FORM HEADER
-
 ===================================================== */
 
 .contact-page-form-eyebrow {
@@ -1251,9 +1246,7 @@ a {
 }
 
 /* =====================================================
-
    FORM
-
 ===================================================== */
 
 .contact-page-form {
@@ -1347,9 +1340,7 @@ a {
 }
 
 /* =====================================================
-
    PAYMENT METHODS
-
 ===================================================== */
 
 .contact-payment-methods {
@@ -1391,9 +1382,7 @@ a {
 }
 
 /* =====================================================
-
    PAYMENT BUTTONS
-
 ===================================================== */
 
 .contact-payment-btn {
@@ -1761,9 +1750,7 @@ a {
 }
 
 /* =====================================================
-
    50% DEPOSIT
-
 ===================================================== */
 
 .contact-payment-deposit {
@@ -1791,9 +1778,7 @@ a {
 }
 
 /* =====================================================
-
    PAYMENT INSTRUCTIONS
-
 ===================================================== */
 
 .contact-payment-instructions {
@@ -1869,9 +1854,7 @@ a {
 }
 
 /* =====================================================
-
    SEND MESSAGE BUTTON
-
 ===================================================== */
 
 .contact-page-submit-btn {
@@ -1927,10 +1910,61 @@ a {
     font-size: clamp(12px, 0.8vw, 15px);
 }
 
+/* ==========================================
+   LARGE PC SCREENS ONLY
+   LEFT CONTACT INFORMATION
+========================================== */
+
+@media (min-width: 1600px) {
+
+    .contact-page-info {
+        padding: 65px 75px;
+    }
+
+    .contact-page-info-item {
+        gap: 28px;
+        margin-bottom: 38px;
+    }
+
+    .contact-page-info-icon {
+        width: 78px;
+        height: 78px;
+        font-size: 30px;
+    }
+
+    .contact-page-info-title,
+    .contact-page-home-link {
+        font-size: 21px;
+        font-weight: 600;
+    }
+
+    .contact-page-info-subtitle {
+        font-size: 16px;
+    }
+
+    #contact-page-follow-title {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    .contact-page-social-icons {
+        gap: 20px;
+    }
+
+    .contact-page-social-icons a {
+        width: 60px;
+        height: 60px;
+        font-size: 27px;
+    }
+
+    .contact-page-left-script {
+        margin-top: 35px;
+        font-size: 45px;
+    }
+}
+
 /* =====================================================
-
    TABLET
-
 ===================================================== */
 
 @media (max-width: 1000px) {
