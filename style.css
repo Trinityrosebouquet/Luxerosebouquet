@@ -2668,8 +2668,9 @@ a {
 
     /* Bigger thank you card */
     .thank-you-page-content {
-        max-width: 600px;
-        padding: 50px 55px;
+        width: 100%;
+        max-width: 800px;
+        padding: 55px 65px;
         border-radius: 18px;
     }
 
