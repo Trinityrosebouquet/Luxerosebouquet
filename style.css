@@ -1142,7 +1142,7 @@ a {
 .contact-page-form-card {
     box-sizing: border-box;
 
-    width: min(540px, 86%);
+    width: min(90%, clamp(540px, 42vw, 850px));
 
     align-self: center;
 
