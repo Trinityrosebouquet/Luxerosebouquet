@@ -816,64 +816,80 @@ a {
 
 
 /* =========================================================
-   CONTACT FORM PAGE
+  START OF CONTACT FORM PAGE
 ========================================================= */
 .contact-page-body {
     margin: 0;
+
     padding: 0;
+
     background: #f7e8e8;
+
     color: #302525;
+
     font-family: "Poppins", sans-serif;
 }
 
-
 /* =====================================================
+
    CONTACT HERO
+
 ===================================================== */
 
 .contact-page-hero {
     position: relative;
+
     min-height: 345px;
 
     display: flex;
+
     align-items: center;
 
     background-image: url("image5.png");
+
     background-size: cover;
+
     background-position: center;
+
     background-repeat: no-repeat;
 
     overflow: hidden;
 }
 
-
 .contact-page-hero-overlay {
     position: absolute;
+
     inset: 0;
+
     z-index: 1;
 
     background: linear-gradient(
         90deg,
         rgba(25, 17, 17, 0.03) 0%,
+
         rgba(25, 17, 17, 0.05) 35%,
+
         rgba(25, 17, 17, 0.45) 52%,
+
         rgba(25, 17, 17, 0.88) 75%,
+
         rgba(25, 17, 17, 0.94) 100%
     );
 }
 
-
 .contact-page-hero-content {
     position: relative;
+
     z-index: 2;
 
     width: 42%;
+
     margin-left: 52%;
+
     padding: 40px 0;
 
     color: #ffffff;
 }
-
 
 .contact-page-eyebrow {
     margin: 0 0 7px;
@@ -881,10 +897,11 @@ a {
     color: #d98ca0;
 
     font-size: 10px;
+
     font-weight: 500;
+
     letter-spacing: 5px;
 }
-
 
 #contact-page-title {
     margin: 0;
@@ -892,11 +909,13 @@ a {
     color: #ffffff;
 
     font-family: "Playfair Display", serif;
+
     font-size: clamp(42px, 5vw, 62px);
+
     font-weight: 400;
+
     line-height: 1.1;
 }
-
 
 .contact-page-flower-divider {
     margin: 12px 0;
@@ -906,24 +925,27 @@ a {
     font-size: 19px;
 }
 
-
 .contact-page-description {
     max-width: 420px;
+
     margin: 0;
 
     color: #eee4e4;
 
     font-size: 13px;
+
     font-weight: 300;
+
     line-height: 1.7;
 }
 
-
 .contact-page-script {
     position: absolute;
+
     z-index: 2;
 
     top: 55px;
+
     right: 4%;
 
     margin: 0;
@@ -931,39 +953,42 @@ a {
     color: #d67f96;
 
     font-family: "Great Vibes", cursive;
+
     font-size: 25px;
+
     font-weight: 400;
+
     line-height: 1.15;
 
     transform: rotate(-5deg);
 }
 
-
 /* =====================================================
+
    MAIN CONTACT AREA
+
 ===================================================== */
 
 .contact-page-main {
     display: grid;
+
     grid-template-columns: 38% 62%;
 
     min-height: 560px;
 
-    background:
-        linear-gradient(
-            rgba(239, 205, 205, 0.84),
-            rgba(239, 205, 205, 0.84)
-        ),
-        url("image5.png");
+    background: linear-gradient(rgba(239, 205, 205, 0.84), rgba(239, 205, 205, 0.84)), url("image5.png");
 
     background-size: cover;
+
     background-position: center;
+
     background-repeat: no-repeat;
 }
 
-
 /* =====================================================
+
    LEFT CONTACT INFORMATION
+
 ===================================================== */
 
 .contact-page-info {
@@ -972,15 +997,17 @@ a {
     padding: 48px 55px;
 
     background: rgba(42, 32, 32, 0.97);
+
     color: #ffffff;
 
     overflow: hidden;
 
     display: flex;
+
     flex-direction: column;
+
     justify-content: center;
 }
-
 
 .contact-page-info::after {
     content: "";
@@ -988,22 +1015,25 @@ a {
     position: absolute;
 
     width: 260px;
+
     height: 260px;
 
     right: -100px;
+
     bottom: -90px;
 
     border: 1px solid rgba(194, 111, 132, 0.15);
+
     border-radius: 50%;
 
     pointer-events: none;
 }
 
-
 /* CONTACT INFORMATION ROW */
 
 .contact-page-info-item {
     display: flex;
+
     align-items: center;
 
     gap: 20px;
@@ -1011,20 +1041,23 @@ a {
     margin-bottom: 27px;
 }
 
-
 /* BIGGER ICONS */
 
 .contact-page-info-icon {
     width: 58px;
+
     height: 58px;
 
     flex-shrink: 0;
 
     display: flex;
+
     justify-content: center;
+
     align-items: center;
 
     background: #bd536e;
+
     color: #ffffff;
 
     border-radius: 50%;
@@ -1032,8 +1065,8 @@ a {
     font-size: 22px;
 }
 
-
 /* MAIN TEXT
+
    Phone, Email, Broward County, Hours */
 
 .contact-page-info-title {
@@ -1042,11 +1075,12 @@ a {
     color: #ffffff;
 
     font-size: 14px;
+
     font-weight: 600;
 }
 
-
 /* SMALL TEXT
+
    Text or Call, Email us, etc. */
 
 .contact-page-info-subtitle {
@@ -1055,9 +1089,9 @@ a {
     color: #d8cccc;
 
     font-size: 11px;
+
     font-weight: 400;
 }
-
 
 /* FOLLOW US */
 
@@ -1067,26 +1101,31 @@ a {
     color: #ffffff;
 
     font-size: 14px;
+
     font-weight: 500;
 }
-
 
 /* SOCIAL MEDIA ICONS */
 
 .contact-page-social-icons {
     display: flex;
+
     gap: 14px;
 }
 
 .contact-page-social-icons a {
     width: 46px;
+
     height: 46px;
 
     display: flex;
+
     justify-content: center;
+
     align-items: center;
 
     background: rgba(255, 255, 255, 0.12);
+
     color: #ffffff;
 
     border-radius: 50%;
@@ -1100,7 +1139,6 @@ a {
         transform 0.25s ease;
 }
 
-
 /* FLOWERS MAKE PEOPLE HAPPIER */
 
 .contact-page-left-script {
@@ -1111,6 +1149,7 @@ a {
     font-family: "Great Vibes", cursive;
 
     font-size: 30px;
+
     line-height: 1.2;
 
     transform: rotate(-5deg);
@@ -1120,6 +1159,7 @@ a {
     display: inline-block;
 
     color: #ffffff;
+
     text-decoration: none;
 
     transition:
@@ -1130,13 +1170,16 @@ a {
 
 .contact-page-home-link:hover {
     color: #d67f96;
+
     letter-spacing: 0.5px;
 }
 
 /* =====================================================
+
    CONTACT FORM CARD
 
    THIS CONTROLS THE MAIN WHITE CONTAINER
+
 ===================================================== */
 
 .contact-page-form-card {
@@ -1149,19 +1192,22 @@ a {
     margin: 18px auto;
 
     /* Smaller top/bottom padding = shorter card */
-    padding: 18px 28px 16px;
+
+    padding: clamp(22px, 1.8vw, 38px) clamp(24px, 2.2vw, 44px);
 
     background: rgba(255, 250, 250, 0.97);
 
     border: 1px solid rgba(255, 255, 255, 0.8);
+
     border-radius: 7px;
 
     box-shadow: 0 10px 30px rgba(67, 34, 34, 0.16);
 }
 
-
 /* =====================================================
+
    FORM HEADER
+
 ===================================================== */
 
 .contact-page-form-eyebrow {
@@ -1169,11 +1215,12 @@ a {
 
     color: #bd536e;
 
-    font-size: 8px;
+    font-size: clamp(11px, 0.8vw, 15px);
+
     font-weight: 600;
+
     letter-spacing: 3px;
 }
-
 
 #contact-page-form-title {
     margin: 0 0 4px;
@@ -1181,46 +1228,49 @@ a {
     color: #342929;
 
     font-family: "Playfair Display", serif;
-    font-size: 29px;
+
+    font-size: clamp(29px, 2.2vw, 42px);
+
     font-weight: 500;
+
     line-height: 1.15;
 }
 
-
 .contact-page-form-description {
-    max-width: 500px;
+    max-width: 100%;
 
     margin: 0 0 10px;
 
     color: #000000;
 
-    font-size: 10px;
+    font-size: clamp(13px, 0.95vw, 18px);
+
     font-weight: 300;
+
     line-height: 1.45;
 }
 
-
 /* =====================================================
+
    FORM
+
 ===================================================== */
 
 .contact-page-form {
     width: 100%;
 }
 
-
 .contact-page-form-row {
     display: grid;
+
     grid-template-columns: 1fr 1fr;
 
-    gap: 10px;
+    gap: clamp(10px, 1vw, 18px);
 }
-
 
 .contact-page-form-field {
-    margin-bottom: 7px;
+    margin-bottom: clamp(10px, 0.8vw, 16px);
 }
-
 
 .contact-page-form-field label {
     display: block;
@@ -1229,10 +1279,10 @@ a {
 
     color: #000;
 
-    font-size: 10px;
+    font-size: clamp(13px, 0.95vw, 17px);
+
     font-weight: 800;
 }
-
 
 /* INPUTS */
 
@@ -1243,46 +1293,58 @@ a {
 
     width: 100%;
 
-    padding: 7px 10px;
+    padding: 10px 13px;
 
     background: #ffffff;
+
     color: #3b3232;
 
     border: 1px solid #d8d1d1;
+
     border-radius: 4px;
 
     outline: none;
 
     font-family: "Poppins", sans-serif;
-    font-size: 9px;
+
+    font-size: clamp(13px, 0.95vw, 17px);
 
     transition:
         border-color 0.2s ease,
         box-shadow 0.2s ease;
+
+    height: clamp(90px, 6vw, 130px);
+
+    min-height: 90px;
+
+    max-height: 220px;
 }
 
 .contact-page-form-field input::placeholder,
 .contact-page-form-field textarea::placeholder {
     color: #242222;
+
     opacity: 1;
+
     font-weight: 500;
-    font-size: 9px;
+
+    font-size: inherit;
 }
 
 .contact-page-form-field input,
 .contact-page-form-field select {
-    height: 34px;
+    height: clamp(40px, 2.7vw, 52px);
 }
-
 
 .contact-page-form-field textarea {
     height: 80px;
+
     min-height: 80px;
+
     max-height: 130px;
 
     resize: vertical;
 }
-
 
 .contact-page-form-field input:focus,
 .contact-page-form-field select:focus,
@@ -1292,19 +1354,21 @@ a {
     box-shadow: 0 0 0 3px rgba(189, 83, 110, 0.08);
 }
 
-
 .contact-page-form-field select {
     cursor: pointer;
+
     color: #000;
 }
 
-
 /* =====================================================
+
    PAYMENT METHODS
+
 ===================================================== */
 
 .contact-payment-methods {
     margin: 7px 0 9px;
+
     padding: 9px 12px;
 
     text-align: center;
@@ -1312,24 +1376,27 @@ a {
     background: #f9eeee;
 
     border: 1px solid #ead2d8;
+
     border-radius: 8px;
 }
-
 
 .contact-payment-title {
     margin: 0 0 7px;
 
     color: #b74f69;
 
-    font-size: 9px;
+    font-size: clamp(12px, 0.9vw, 16px);
+
     font-weight: 600;
+
     letter-spacing: 1.5px;
 }
 
-
 .contact-payment-options {
     display: flex;
+
     justify-content: center;
+
     align-items: stretch;
 
     flex-wrap: nowrap;
@@ -1337,28 +1404,35 @@ a {
     gap: 8px;
 }
 
-
 /* =====================================================
+
    PAYMENT BUTTONS
+
 ===================================================== */
 
 .contact-payment-btn {
     box-sizing: border-box;
 
-    width: 105px;
-    height: 55px;
+    width: clamp(105px, 8vw, 145px);
+
+    height: clamp(58px, 4vw, 75px);
 
     display: flex;
+
     flex-direction: column;
+
     justify-content: center;
+
     align-items: center;
 
     gap: 3px;
 
     background: #ffffff;
+
     color: #342829;
 
     border: 1px solid #e2c4cb;
+
     border-radius: 8px;
 
     text-decoration: none;
@@ -1374,26 +1448,29 @@ a {
         box-shadow 0.2s ease;
 }
 
-
 .contact-payment-btn > span:not(.zelle-icon) {
     color: #342829;
 
-    font-size: 8px;
+    font-size: clamp(11px, 0.8vw, 14px);
+
     font-weight: 500;
 }
-
 
 /* CASH APP */
 
 #cashapp-payment-btn i {
     width: 27px;
+
     height: 27px;
 
     display: flex;
+
     justify-content: center;
+
     align-items: center;
 
     background: #bd536e;
+
     color: #ffffff;
 
     border-radius: 6px;
@@ -1403,12 +1480,15 @@ a {
 
 #cashapp-payment-btn {
     background: #00d64f;
+
     border-color: #00d64f;
+
     color: #ffffff;
 }
 
 #cashapp-payment-btn i {
     background: #ffffff;
+
     color: #00d64f;
 }
 
@@ -1418,6 +1498,7 @@ a {
 
 #cashapp-payment-btn:hover {
     background: #00bd46;
+
     border-color: #00bd46;
 }
 
@@ -1429,34 +1510,41 @@ a {
     font-size: 27px;
 }
 
-
 /* ZELLE */
 
 .zelle-icon {
     width: 27px;
+
     height: 27px;
 
     display: flex;
+
     justify-content: center;
+
     align-items: center;
 
     background: #bd536e;
+
     color: #ffffff;
 
     border-radius: 6px;
 
     font-size: 16px;
+
     font-weight: 600;
 }
 
 #zelle-payment-btn {
     background: #6d1ed4;
+
     border-color: #6d1ed4;
+
     color: #ffffff;
 }
 
 #zelle-payment-btn .zelle-icon {
     background: #ffffff;
+
     color: #6d1ed4;
 }
 
@@ -1466,6 +1554,7 @@ a {
 
 #zelle-payment-btn:hover {
     background: #5b18b5;
+
     border-color: #5b18b5;
 }
 
@@ -1481,12 +1570,10 @@ a {
     box-shadow: 0 6px 12px rgba(189, 83, 110, 0.16);
 }
 
-
 .contact-payment-btn i,
 .zelle-icon {
     transition: transform 0.2s ease;
 }
-
 
 .contact-payment-btn:hover i,
 .contact-payment-btn:hover .zelle-icon {
@@ -1495,22 +1582,35 @@ a {
 
 .contact-payment-choose {
     margin: 8px 0 6px;
+
     color: #000000;
+
     font-size: 15px;
+
     font-weight: 500;
 }
 
 /* Cash App QR Modal */
+
 .cashapp-qr-modal {
     display: none;
+
     position: fixed;
+
     inset: 0;
+
     width: 100%;
+
     height: 100%;
+
     background: rgba(0, 0, 0, 0.65);
+
     z-index: 9999;
+
     align-items: center;
+
     justify-content: center;
+
     padding: 20px;
 }
 
@@ -1520,59 +1620,89 @@ a {
 
 .cashapp-qr-modal-content {
     position: relative;
+
     width: 100%;
+
     max-width: 420px;
+
     background: #ffffff;
+
     border-radius: 20px;
+
     padding: 35px 30px;
+
     text-align: center;
 }
 
 .cashapp-qr-modal-content h2 {
     margin: 0 0 10px;
+
     font-size: 28px;
 }
 
 .cashapp-qr-description {
     margin-bottom: 20px;
+
     line-height: 1.6;
 }
 
 .cashapp-qr-image {
     display: block;
+
     width: 100%;
+
     max-width: 300px;
+
     height: auto;
+
     margin: 0 auto 20px;
 }
 
 .cashapp-qr-note {
     margin: 0;
+
     line-height: 1.6;
 }
 
 .cashapp-qr-close {
     position: absolute;
+
     top: 12px;
+
     right: 18px;
+
     border: none;
+
     background: transparent;
+
     font-size: 32px;
+
     line-height: 1;
+
     cursor: pointer;
 }
 
 /* Zelle QR Modal */
+
 .zelle-qr-modal {
     display: none;
+
     position: fixed;
+
     inset: 0;
+
     width: 100%;
+
     height: 100%;
+
     background: rgba(0, 0, 0, 0.65);
+
     z-index: 9999;
+
     align-items: center;
+
     justify-content: center;
+
     padding: 20px;
 }
 
@@ -1582,50 +1712,72 @@ a {
 
 .zelle-qr-modal-content {
     position: relative;
+
     width: 100%;
+
     max-width: 420px;
+
     background: #ffffff;
+
     border-radius: 20px;
+
     padding: 35px 30px;
+
     text-align: center;
 }
 
 .zelle-qr-modal-content h2 {
     margin: 0 0 10px;
+
     font-size: 28px;
 }
 
 .zelle-qr-description {
     margin-bottom: 20px;
+
     line-height: 1.6;
 }
 
 .zelle-qr-image {
     display: block;
+
     width: 100%;
+
     max-width: 300px;
+
     height: auto;
+
     margin: 0 auto 20px;
 }
 
 .zelle-qr-note {
     margin: 0;
+
     line-height: 1.6;
 }
 
 .zelle-qr-close {
     position: absolute;
+
     top: 12px;
+
     right: 18px;
+
     border: none;
+
     background: transparent;
+
     font-size: 32px;
+
     line-height: 1;
+
     cursor: pointer;
 }
 
 /* =====================================================
+
    50% DEPOSIT
+
 ===================================================== */
 
 .contact-payment-deposit {
@@ -1633,37 +1785,42 @@ a {
 
     color: #000;
 
-    font-size: 12px;
+    font-size: clamp(13px, 1vw, 18px);
+
     font-weight: 600;
 }
 
-
 .contact-payment-note {
-    max-width: 440px;
+    max-width: 100%;
 
     margin: 0 auto;
 
     color: #000;
 
-    font-size: 10px;
+    font-size: clamp(12px, 0.85vw, 16px);
+
     font-weight: 400;
+
     line-height: 1.35;
 }
 
-
 /* =====================================================
+
    PAYMENT INSTRUCTIONS
+
 ===================================================== */
 
 .contact-payment-instructions {
     max-width: 440px;
 
     margin: 6px auto 0;
+
     padding: 6px 9px;
 
     background: #ffffff;
 
     border: 1px solid #e8cdd3;
+
     border-radius: 6px;
 
     text-align: left;
@@ -1673,42 +1830,45 @@ a {
     max-width: 460px;
 
     margin: 8px auto 0;
+
     padding: 10px 14px;
 
     background: #ffffff;
 
     border: 1px solid #e8cdd3;
+
     border-radius: 7px;
 
     text-align: center;
 }
-
 
 .contact-payment-instructions-title {
     margin: 0 0 6px;
 
     color: #6f263a;
 
-    font-size: 14px;
+    font-size: clamp(14px, 1vw, 19px);
+
     font-weight: 700;
 
     text-align: center;
+
     letter-spacing: 0.5px;
 }
-
 
 .contact-payment-instructions p {
     margin: 5px 0;
 
     color: #000;
 
-    font-size: 10px;
+    font-size: clamp(12px, 0.85vw, 16px);
+
     font-weight: 500;
+
     line-height: 1.5;
 
     text-align: center;
 }
-
 
 .contact-payment-instructions strong {
     color: #171011;
@@ -1716,30 +1876,35 @@ a {
     font-weight: 700;
 }
 
-
 .contact-payment-instructions strong {
     color: #2f2325;
+
     font-weight: 600;
 }
 
-
 /* =====================================================
+
    SEND MESSAGE BUTTON
+
 ===================================================== */
 
 .contact-page-submit-btn {
     width: 100%;
 
-    padding: 9px 18px;
+    padding: clamp(12px, 0.9vw, 17px) 18px;
 
     background: #bd536e;
+
     color: #ffffff;
 
     border: none;
+
     border-radius: 30px;
 
     font-family: "Poppins", sans-serif;
-    font-size: 9px;
+
+    font-size: clamp(14px, 1vw, 18px);
+
     font-weight: 400;
 
     cursor: pointer;
@@ -1750,11 +1915,9 @@ a {
         box-shadow 0.25s ease;
 }
 
-
 .contact-page-submit-btn span {
     margin-left: 7px;
 }
-
 
 .contact-page-submit-btn:hover {
     background: #a7445e;
@@ -1764,102 +1927,100 @@ a {
     box-shadow: 0 6px 15px rgba(189, 83, 110, 0.22);
 }
 
-
 .contact-page-submit-btn:active {
     transform: translateY(0);
 }
 
 .contact-page-response-time {
     margin: 5px 0 0;
+
     text-align: center;
+
     color: #000;
-    font-size: 9px;
+
+    font-size: clamp(12px, 0.8vw, 15px);
 }
 
-
 /* =====================================================
+
    TABLET
+
 ===================================================== */
 
 @media (max-width: 1000px) {
-
     .contact-page-hero-content {
         width: 48%;
+
         margin-left: 47%;
     }
-
 
     .contact-page-script {
         display: none;
     }
 
-
     .contact-page-main {
         grid-template-columns: 40% 60%;
     }
-
 
     .contact-page-info {
         padding: 45px 30px;
     }
 
-
     /*
+
        IMPORTANT:
+
        Do not increase the form padding here.
+
        This keeps the form compact.
+
     */
 
     .contact-page-form-card {
         width: 88%;
+
         max-width: 540px;
 
         padding: 18px 24px 16px;
     }
 }
 
-
 /* =====================================================
+
    SMALL TABLET
+
 ===================================================== */
 
 @media (max-width: 800px) {
-
     .contact-page-hero {
         min-height: 380px;
+
         background-position: 35% center;
     }
 
-
     .contact-page-hero-overlay {
-        background: linear-gradient(
-            90deg,
-            rgba(30, 20, 20, 0.15),
-            rgba(30, 20, 20, 0.82)
-        );
+        background: linear-gradient(90deg, rgba(30, 20, 20, 0.15), rgba(30, 20, 20, 0.82));
     }
-
 
     .contact-page-hero-content {
         width: 50%;
 
         margin-left: 45%;
+
         padding-right: 25px;
     }
-
 
     #contact-page-title {
         font-size: 45px;
     }
 
-
     .contact-page-main {
         display: block;
     }
 
-
     .contact-page-info {
         display: grid;
+
         grid-template-columns: 1fr 1fr;
 
         column-gap: 30px;
@@ -1867,31 +2028,31 @@ a {
         padding: 40px 8%;
     }
 
-
     .contact-page-social-section,
     .contact-page-left-script {
         grid-column: 1 / -1;
     }
 
-
     .contact-page-form-card {
         box-sizing: border-box;
 
         width: calc(100% - 50px);
+
         max-width: 540px;
 
         margin: 25px auto;
+
         padding: 18px 24px 16px;
     }
 }
 
-
 /* =====================================================
+
    MOBILE
+
 ===================================================== */
 
 @media (max-width: 600px) {
-
     .contact-page-hero {
         min-height: 430px;
 
@@ -1900,16 +2061,16 @@ a {
         background-position: 30% center;
     }
 
-
     .contact-page-hero-overlay {
         background: linear-gradient(
             180deg,
             rgba(27, 18, 18, 0.1) 0%,
+
             rgba(27, 18, 18, 0.35) 45%,
+
             rgba(27, 18, 18, 0.9) 100%
         );
     }
-
 
     .contact-page-hero-content {
         box-sizing: border-box;
@@ -1917,22 +2078,21 @@ a {
         width: 100%;
 
         margin: 0;
+
         padding: 35px 22px;
 
         text-align: center;
     }
 
-
     .contact-page-eyebrow {
-        font-size: 8px;
+        font-size: 11px;
+
         letter-spacing: 4px;
     }
-
 
     #contact-page-title {
         font-size: 43px;
     }
-
 
     .contact-page-description {
         max-width: 320px;
@@ -1942,11 +2102,9 @@ a {
         font-size: 10px;
     }
 
-
     .contact-page-script {
         display: none;
     }
-
 
     /* LEFT INFO */
 
@@ -1956,19 +2114,17 @@ a {
         padding: 38px 25px;
     }
 
-
     .contact-page-info-item {
         margin-bottom: 18px;
     }
 
-
     .contact-page-info-icon {
         width: 42px;
+
         height: 42px;
 
         font-size: 15px;
     }
-
 
     /* FORM */
 
@@ -1976,24 +2132,23 @@ a {
         box-sizing: border-box;
 
         width: calc(100% - 30px);
+
         max-width: 540px;
 
         margin: 22px auto;
+
         padding: 17px 18px 15px;
     }
-
 
     #contact-page-form-title {
         font-size: 27px;
     }
 
-
     .contact-page-form-description {
         margin-bottom: 9px;
 
-        font-size: 9px;
+        font-size: 13px;
     }
-
 
     .contact-page-form-row {
         grid-template-columns: 1fr;
@@ -2001,138 +2156,150 @@ a {
         gap: 0;
     }
 
-
     /*
+
        KEEP THESE SHORT.
+
        Your old CSS increased them on mobile.
+
     */
 
     .contact-page-form-field input,
     .contact-page-form-field select {
-        height: 34px;
+        height: 44px;
     }
-
 
     .contact-page-form-field textarea {
-        height: 58px;
-        min-height: 58px;
-    }
+        height: 90px;
 
+        min-height: 90px;
+    }
 
     /* PAYMENT */
 
     .contact-payment-methods {
         margin: 7px 0;
+
         padding: 9px 7px;
     }
-
 
     .contact-payment-options {
         gap: 5px;
     }
 
-
     .contact-payment-btn {
         flex: 1;
 
         width: auto;
+
         min-width: 0;
+
         height: 52px;
     }
-
 
     #cashapp-payment-btn i,
     .zelle-icon {
         width: 25px;
+
         height: 25px;
 
         font-size: 15px;
     }
 
-
     #applepay-payment-btn i {
         font-size: 25px;
     }
 
-
     .contact-payment-btn > span:not(.zelle-icon) {
-        font-size: 7px;
+        font-size: 11px;
     }
-
 
     .contact-payment-title {
         margin-bottom: 6px;
 
-        font-size: 8px;
+        font-size: 11px;
+
         letter-spacing: 1px;
     }
-
 
     .contact-payment-deposit {
         margin-top: 6px;
 
-        font-size: 9px;
+        font-size: 13px;
     }
-
 
     .contact-payment-note {
-        font-size: 7px;
+        font-size: 11px;
     }
-
 
     .contact-payment-instructions {
         margin-top: 5px;
+
         padding: 5px 7px;
     }
 
-
     .contact-payment-instructions p {
-        font-size: 7px;
+        font-size: 11px;
+
         line-height: 1.25;
     }
-
 
     /* BUTTON */
 
     .contact-page-submit-btn {
         padding: 9px 18px;
     }
+
+    /* Readable form fields and prevent iPhone focus zoom */
+    .contact-page-form-field input,
+    .contact-page-form-field select,
+    .contact-page-form-field textarea,
+    .contact-page-form-field input::placeholder,
+    .contact-page-form-field textarea::placeholder {
+        font-size: 16px;
+    }
+
+    .contact-page-form-field label {
+        font-size: 14px;
+    }
+    .contact-page-submit-btn {
+        font-size: 15px;
+    }
+    .contact-page-response-time {
+        font-size: 12px;
+    }
 }
 
-
 /* =====================================================
+
    VERY SMALL PHONES
+
 ===================================================== */
 
 @media (max-width: 380px) {
-
     .contact-page-form-card {
         width: calc(100% - 20px);
 
         margin: 18px auto;
+
         padding: 15px 13px 13px;
     }
-
 
     #contact-page-form-title {
         font-size: 25px;
     }
 
-
     .contact-page-info {
         padding: 35px 20px;
     }
-
 
     .contact-page-info-title {
         font-size: 10px;
     }
 
-
     .contact-payment-options {
         gap: 4px;
     }
-
 
     .contact-payment-btn {
         height: 50px;
@@ -2142,17 +2309,9 @@ a {
    END OF CONTACT FORM PAGE
 ========================================================= */
 
-
 /* =========================================================
-   LUXE ROSE BOUQUET
-   THANK YOU PAGE
+   LUXE ROSE BOUQUET THANK YOU PAGE
 ========================================================= */
-
-
-/* =====================================================
-   PAGE
-===================================================== */
-
 .thank-you-page-body {
     margin: 0;
     padding: 0;
@@ -3132,8 +3291,6 @@ a {
 /* =========================================================
    END OF PRIVACY POLICY PAGE
 ========================================================= */
-
-
 
 /* =========================================================
    START OF TERMS OF SERVICE PAGE
